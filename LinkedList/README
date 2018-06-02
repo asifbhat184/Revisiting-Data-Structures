@@ -1,0 +1,9 @@
+execute using:
+
+gcc LinkedListDemo.c  MyFunctions.c  -o executor
+
+this creates exxecutable named executor
+
+run using
+
+./executor
