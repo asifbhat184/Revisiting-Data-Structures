@@ -33,7 +33,7 @@ main(){
 				printInReverse(start);
 				break;
 			case 6:
-		start=reverse(start);
+				start=reverse(start);
 				break;
 			case 7:
 				//leteElement();
