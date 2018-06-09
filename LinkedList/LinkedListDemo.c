@@ -21,19 +21,16 @@ main(){
 				showElements(start);
 				break;
 			case 3:
-				deleteAtEnd(start);
-				break;
+			deleteAtEnd(start);
+			break;
 			case 4:
-
-				printf("\nEnter the element you want to Insert\n");
-				scanf("%d",&element);
-				start=insertAtHead(start,element);	
+				//leteElement();
 				break;
 			case 5:
-				printInReverse(start);
+			printInReverse(start);
 				break;
 			case 6:
-		start=reverse(start);
+				//leteElement();
 				break;
 			case 7:
 				//leteElement();

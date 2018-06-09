@@ -46,13 +46,13 @@ void showElements(struct Node* start){
 
 /**Function to Print elements in reverse***/
 void printInReverse(struct Node* temp){
-	if(temp==NULL){
-		return;
-	}else{
+if(temp==NULL){
+return;
+}else{
 
-		printInReverse(temp->next);
+printInReverse(temp->next);
 		printf("-->%d ",temp->data);
-	}
+}
 
 
 
@@ -62,50 +62,16 @@ void printInReverse(struct Node* temp){
 
 /*Function to delete Elements at th end**/
 void deleteAtEnd(struct Node* temp){
-	if(temp==NULL)
-		return;
-	struct Node* savedPtr=NULL;
-	while(temp->next!=NULL){
-		savedPtr=temp;
-		temp=temp->next;
-	}
-	free(temp);
+if(temp==NULL)
+	return;
+struct Node* savedPtr=NULL;
+while(temp->next!=NULL){
+	savedPtr=temp;
+	temp=temp->next;
+}
+free(temp);
 	savedPtr->next=NULL;
 
-}
 
-
-/**Function to insert at the head**/
-struct Node* insertAtHead(struct Node* temp,int value){
-	if(temp==NULL){
-		temp=createNode(value);
-		return temp;
-	}else{
-		struct Node* temp2;
-		temp2=createNode(value);
-		temp2->next=temp;
-		return temp2;
-
-	}}
-
-
-/**Function to reverse the linked list**/
-struct Node* reverse(struct Node* start){
-if(start==NULL)
-	return start;
-
-struct Node *prev,*next,*curr;
-prev=NULL;
-curr=start;
-next=curr;
-
-while(curr!=NULL){
-	next=curr->next;
-curr->next=prev;
-prev=curr;
-curr=next;
-
-}
-return prev;
 }
 
