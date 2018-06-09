@@ -60,3 +60,18 @@ printInReverse(temp->next);
 
 }
 
+/*Function to delete Elements at th end**/
+void deleteAtEnd(struct Node* temp){
+if(temp==NULL)
+	return;
+struct Node* savedPtr=NULL;
+while(temp->next!=NULL){
+	savedPtr=temp;
+	temp=temp->next;
+}
+free(temp);
+	savedPtr->next=NULL;
+
+
+}
+

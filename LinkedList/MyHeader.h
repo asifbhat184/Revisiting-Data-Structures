@@ -10,3 +10,4 @@ struct Node* createNode(int );
 struct Node*  insertElement(struct Node*,int);
 void showElements(struct Node*);
 void printInReverse(struct Node* );
+void deleteAtEnd(struct Node* temp);
