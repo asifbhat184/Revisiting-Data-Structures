@@ -21,9 +21,8 @@ main(){
 				showElements(start);
 				break;
 			case 3:
-				//leteElement();
-				break;
-
+			deleteAtEnd(start);
+			break;
 			case 4:
 				//leteElement();
 				break;
