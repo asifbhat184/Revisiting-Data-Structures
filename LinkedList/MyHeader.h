@@ -13,3 +13,4 @@ void printInReverse(struct Node* );
 void deleteAtEnd(struct Node* temp);
 struct Node* insertAtHead(struct Node* temp,int value);
 struct Node* reverse(struct Node* start);
+struct Node* reverseUsingRecursion(struct Node *start);

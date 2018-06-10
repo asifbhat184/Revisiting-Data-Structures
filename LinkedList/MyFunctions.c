@@ -91,21 +91,41 @@ struct Node* insertAtHead(struct Node* temp,int value){
 
 /**Function to reverse the linked list**/
 struct Node* reverse(struct Node* start){
-if(start==NULL)
-	return start;
+	if(start==NULL)
+		return start;
 
-struct Node *prev,*next,*curr;
-prev=NULL;
-curr=start;
-next=curr;
+	struct Node *prev,*next,*curr;
+	prev=NULL;
+	curr=start;
+	next=curr;
 
-while(curr!=NULL){
-	next=curr->next;
-curr->next=prev;
-prev=curr;
-curr=next;
+	while(curr!=NULL){
+		next=curr->next;
+		curr->next=prev;
+		prev=curr;
+		curr=next;
 
+	}
+	return prev;
 }
-return prev;
-}
 
+/**Function to reverse the list using recursion**/
+struct Node* reverseUsingRecursion(struct Node *ptr){
+	if(ptr==NULL)
+		return NULL;
+	else {
+//		struct Node *ptr=start;
+
+		if(ptr->next==NULL){
+//			start=ptr;
+			return ptr;
+		}else{
+	struct Node *rev=reverseUsingRecursion(ptr->next);
+				struct Node *ptr2=ptr->next;
+			ptr2->next=ptr;
+			ptr->next=NULL;
+return rev;
+		}
+	
+}
+}

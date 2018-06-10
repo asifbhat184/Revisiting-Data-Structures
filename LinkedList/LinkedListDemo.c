@@ -36,7 +36,8 @@ main(){
 				start=reverse(start);
 				break;
 			case 7:
-				//leteElement();
+
+start= reverseUsingRecursion(start);
 				break;
 			case 8:
 				printf("Exiting..thanks!\n");
