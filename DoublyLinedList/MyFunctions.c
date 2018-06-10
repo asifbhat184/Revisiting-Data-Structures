@@ -1,9 +1,9 @@
 #include"MyHeader.h"
 struct Node* createNode(int data){
-struct Node *temp=(struct Node*)malloc(sizeof(struct Node);
+struct Node *temp=(struct Node*)malloc(sizeof(struct Node));
 		temp->data=data;
 		temp->prev=NULL;
-		tem->next=NULL;
+		temp->next=NULL;
 
 		return temp;
 }
@@ -17,7 +17,8 @@ return temp;
 }
 struct Node *temp2;
 temp2=createNode(data);
-tem2->next=temp;
+temp2->next=temp;
+temp->prev=temp2;
 return temp2;
 
 }
@@ -30,5 +31,6 @@ return;
 }	
 while(start->next!=NULL){
 printf("-->%d",start->data);
+start=start->next;
 }	
 }
