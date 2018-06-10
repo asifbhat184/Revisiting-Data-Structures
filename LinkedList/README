@@ -1,8 +1,12 @@
 execute using:
 
+make
+
+or
+
 gcc LinkedListDemo.c  MyFunctions.c  -o executor
 
-this creates exxecutable named executor
+this creates executable named executor
 
 run using
 
