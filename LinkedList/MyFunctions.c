@@ -32,6 +32,10 @@ struct Node* insertElement(struct Node* start,int value){
 
 /**Function to traverse/display elements in a linked list**/
 void showElements(struct Node* start){
+	if(start==NULL){
+		printf("List is empty!");
+		return;
+	}
 	struct Node *ptr=start;
 	printf("\n\nElements in Linked list are:\n");
 	while(ptr!=NULL){
