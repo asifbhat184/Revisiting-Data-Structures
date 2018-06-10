@@ -21,3 +21,14 @@ tem2->next=temp;
 return temp2;
 
 }
+
+/**Functions to show the elements in the list**/
+void show(struct Node *start){
+if(start==NULL){
+printf("List is empty");
+return;
+}	
+while(start->next!=NULL){
+printf("-->%d",start->data);
+}	
+}
