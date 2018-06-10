@@ -114,10 +114,9 @@ struct Node* reverseUsingRecursion(struct Node *ptr){
 	if(ptr==NULL)
 		return NULL;
 	else {
-//		struct Node *ptr=start;
 
 		if(ptr->next==NULL){
-//			start=ptr;
+
 			return ptr;
 		}else{
 	struct Node *rev=reverseUsingRecursion(ptr->next);
