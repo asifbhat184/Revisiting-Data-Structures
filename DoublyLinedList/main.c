@@ -1,0 +1,3 @@
+#include"MyHeader.h"
+main(){
+}
