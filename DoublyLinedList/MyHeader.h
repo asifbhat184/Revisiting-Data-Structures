@@ -10,6 +10,6 @@ struct Node{
 /**Function Declerations**/
 struct Node* createNode(int);
 struct Node* insertAtHead(struct Node*,int);
-
+struct Node* insertAtEnd(struct Node *temp);
 
 

@@ -6,7 +6,7 @@ main(){
 	printf("\n\nHello!\n**** welcome to demo prog of Doubly-Linked list***\n");
 
 	while(choice!=8){
-		printf("\n\nEnter:\n\t1 to insert At Head\n\t2 to show \n\t3 to delete\n\t4 to insert at head\n\t5 to print in reverse\n\t6 to reverse\n\t7 to reverse using recursion\n\t8 to exit\n\n");
+		printf("\n\nEnter:\n\t1 to insert At Head\n\t2 to show \n\t3 to delete\n\t4 to insert at End\n\t5 to print in reverse\n\t6 to reverse\n\t7 to reverse using recursion\n\t8 to exit\n\n");
 		scanf("%d",&choice);
 		switch(choice){
 			case 1:
@@ -20,14 +20,14 @@ main(){
 				break;
 		/*	case 3:
 				deleteAtEnd(start);
-				break;
+				break;*/
 			case 4:
 
 				printf("\nEnter the element you want to Insert\n");
 				scanf("%d",&element);
-				start=insertAtHead(start,element);	
+				start=insertAtEnd(start,data);	
 				break;
-			case 5:
+/*			case 5:
 				printInReverse(start);
 				break;
 			case 6:
