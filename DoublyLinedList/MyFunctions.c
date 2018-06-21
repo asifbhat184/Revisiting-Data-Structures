@@ -29,7 +29,7 @@ void show(struct Node *start){
 		printf("List is empty");
 		return;
 	}
-/**If we check for start->next != NULL,we are missing the display of element for which Next==NULL i.e last element of list**/	
+	/**If we check for start->next != NULL,we are missing the display of element for which Next==NULL i.e last element of list**/	
 	while(start!=NULL){
 		printf("-->%d",start->data);
 		start=start->next;
@@ -43,7 +43,7 @@ struct Node* insertAtEnd(struct Node *start,int data){
 		start=createNode(data);
 		return start;
 	}
-	
+
 	struct Node *temp2,*temp=start;
 	temp2=createNode(data);
 	while(temp->next!=NULL)
@@ -64,5 +64,22 @@ void deleteAtEnd(struct Node *temp){
 	}
 	free(temp);
 	savedPtr->next=NULL;
+
+}
+
+/**printing DLL in rreverse**/
+void printInReverse(struct Node *start){
+	if(start==NULL){
+		printf("List is empty");
+	}else{
+		while(start->next!=NULL)
+			start=start->next;
+		while(start!=NULL){
+			printf("-->%d",start->data);
+			start=start->prev;
+
+		}
+
+	}
 
 }
