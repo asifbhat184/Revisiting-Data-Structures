@@ -18,13 +18,13 @@ main(){
 				printf("the elements are:\n");
 				show(start);
 				break;
-		/*	case 3:
+			case 3:
 				deleteAtEnd(start);
-				break;*/
+				break;
 			case 4:
 
 				printf("\nEnter the element you want to Insert\n");
-				scanf("%d",&element);
+				scanf("%d",&data);
 				start=insertAtEnd(start,data);	
 				break;
 /*			case 5:
