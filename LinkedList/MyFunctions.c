@@ -65,9 +65,14 @@ void printInReverse(struct Node* temp){
 }
 
 /*Function to delete Elements at th end**/
-void deleteAtEnd(struct Node* temp){
+struct Node* deleteAtEnd(struct Node* head){
+	struct Node *temp=head;
 	if(temp==NULL)
-		return;
+		return NULL;
+	if(temp->next==NULL){
+		free(temp);
+		return NULL;
+	}
 	struct Node* savedPtr=NULL;
 	while(temp->next!=NULL){
 		savedPtr=temp;
@@ -75,6 +80,7 @@ void deleteAtEnd(struct Node* temp){
 	}
 	free(temp);
 	savedPtr->next=NULL;
+	return head;
 
 }
 
